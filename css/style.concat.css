@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 100vh;
+  height: 100vh;
   background-image: url(/background_img.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,11 +60,11 @@ body {
   .form-input {
     border: none;
     background: transparent;
-    flex: 1;
     font-size: 2rem;
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    padding: 0 1.2rem; }
+    padding: 0 1.2rem;
+    width: 90%; }
     .form-input:focus {
       outline: none;
       background: none; }
@@ -86,11 +86,15 @@ body {
     visibility: visible;
     animation: slide-down 0.5s; }
   .form-warning {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     transition: 0.3s all;
     color: #d9480f; }
   .form-input:focus:invalid ~ .form-warning {
-    display: block; }
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto; }
   .form-btn {
     border: none;
     width: 100%;
@@ -134,7 +138,7 @@ body {
       width: 40%; } }
   @media (max-width: 31.25em) {
     .form {
-      width: 80%; } }
+      width: 60%; } }
 
 @keyframes slide-down {
   0% {
