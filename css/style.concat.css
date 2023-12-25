@@ -20,7 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(/background_img.jpg);
+  background-image: url(/background_img.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
