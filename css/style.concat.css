@@ -99,7 +99,8 @@ body {
     background-color: var(--color-black);
     color: var(--color-white);
     border-radius: 2.4rem;
-    display: block; }
+    display: block;
+    margin-top: 3.8rem; }
     .form-btn:hover {
       box-shadow: 0 1rem 2rem var(--color-black-opac);
       cursor: pointer; }
