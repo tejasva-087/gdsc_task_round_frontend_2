@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  max-height: 100vh;
   background-image: url(/background_img.webp);
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@ body {
       width: 40%; } }
   @media (max-width: 31.25em) {
     .form {
-      width: 60%; } }
+      width: 80%; } }
 
 @keyframes slide-down {
   0% {
